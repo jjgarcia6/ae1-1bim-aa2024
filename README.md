@@ -1,22 +1,13 @@
 # ae1-1bim-aa2024
 
-* Realice un fork al repositorio
-* Realice el proceso de clonación.
-* Agregue una rama adicional al repositorio. Se debe tener una rama llamada main y un rama denomindad ramados
-* En la rama main:
-  * Ejecute las acciones indicadas en el repositorio.
-  * Genere una base de datos relacional para las siguientes entidades:
-  * Locales de comida (agregue sus características)
-  * Centros deportivos (agregue sus características)
-  * Genere un script que permita almacena información en una base de datos relacional para las entidades dadas.
-  * Genere consultas a la base para obtener información de las entidades de la base de datos generada.
-  * Confirme los cambios generados en el sistema de control de versiones.
-* En la rama rama dos:
-  * Ejecute las acciones indicadas en el repositorio.
-  * Genere una base de datos no relacional para las siguientes entidades:
-  * Locales de comida (agregue sus características)
-  * Centros deportivos (agregue sus características)
-  * Genere un script que permita almacena información en una base de datos no relacional para las entidades dadas.
-  * Genere consultas a la base de datos para obtener información de las entidades de la base de datos generada.
-  * Confirme los cambios generados en el sistema de control de versiones.
-* Suba el enlace del repositorio
+* Esta branch se llama ramados
+* Consta de una carpeta llamada mongo
+* Aqui se encuentran 6 archivos 
+* conexion establece el enlace con la base en Atlas Mongo que esta en la nube
+* listar muestra las colecciones que contiene la base
+* insert carga datos en la base mongo
+* select presenta informacion que consta en la base dependiendo de la condicion del select
+* update modifica ciertos documentos en las colecciones bajo ciertas condiciones
+* delete borra ciertos documentos en las colecciones bajo ciertas condiciones 
+
+* la version de Python que se usa es Python 3.12.7
