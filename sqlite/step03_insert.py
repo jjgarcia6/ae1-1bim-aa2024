@@ -23,12 +23,12 @@ centros_deportivos = [
 ]
 
 # Definir la sentencia SQL para insertar registros en las tablas
-insert_locales_de_comida = '''
+INSERT_LOCALES = '''
 INSERT INTO locales_de_comida (id, nombre, direccion, telefono, tipo_comida, capacidad)
 VALUES (?, ?, ?, ?, ?, ?)
 '''
 
-insert_centros_deportivos = '''
+INSERT_CENTROS = '''
 INSERT INTO centros_deportivos (id, nombre, direccion, telefono, tipo_deporte, capacidad)
 VALUES (?, ?, ?, ?, ?, ?)
 '''
@@ -36,6 +36,6 @@ VALUES (?, ?, ?, ?, ?, ?)
 # Insertar los registros en las tablas
 with conn:
     cursor = conn.cursor()
-    cursor.executemany(insert_locales_de_comida, locales_de_comida)
-    cursor.executemany(insert_centros_deportivos, centros_deportivos)
+    cursor.executemany(INSERT_LOCALES, locales_de_comida)
+    cursor.executemany(INSERT_LOCALES, centros_deportivos)
     print('Registros insertados correctamente!!')
