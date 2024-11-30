@@ -6,10 +6,19 @@ from step01_conexion import conn
 SELECT_LOCALES_DE_COMIDA = '''SELECT * FROM locales_de_comida'''
 SELECT_CENTROS_DEPORTIVOS = '''SELECT * FROM centros_deportivos'''
 
+# Funcion para ejecutar una consulta y mostrar los resultados
 
-def fetch_and_print(cursor, query):
-    cursor.execute(query)
-    results = cursor.fetchall()
+
+def fetch_and_print(cur, query):
+    """
+    Ejecuta consulta SQL y muestra los resultados
+
+    Arg:
+        cur: cursor de la conexion
+        query: sentencia SQL
+    """
+    cur.execute(query)
+    results = cur.fetchall()
     for row in results:
         print(row)
     print()
