@@ -1,4 +1,4 @@
-"""Creacion de unas tablas en una base de datos SQLite3"""
+"""Creacion de tablas locales_de_comida y centros_deportivos en una base de datos SQLite3"""
 
 # Importar la conexion a la base de datos
 from step01_conexion import conn
