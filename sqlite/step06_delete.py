@@ -1,27 +1,27 @@
-'''Eliminar datos de la tabla locales_de_comida y centros_deportivos'''
+'''Eliminar datos de las tablas clinicas y parques'''
 
 from step01_conexion import conn
 
 # Definir la sentencia SQL para eliminar registros en las tablas
-delete_locales_de_comida = [
+delete_clinicas = [
     '''
-    DELETE FROM locales_de_comida
-    WHERE nombre = 'Michi'
+    DELETE FROM clinicas
+    WHERE nombre = 'Granados'
     '''
 ]
 
-delete_centros_deportivos = [
+delete_parques = [
     '''
-    DELETE FROM centros_deportivos
-    WHERE nombre = 'Maori'
+    DELETE FROM parques
+    WHERE nombre = 'Natural'
     '''
 ]
 
 # Eliminar los registros en las tablas
 with conn:
     cursor = conn.cursor()
-    for sql in delete_locales_de_comida:
+    for sql in delete_clinicas:
         cursor.execute(sql)
-    for sql in delete_centros_deportivos:
+    for sql in delete_parques:
         cursor.execute(sql)
     print('Registros eliminados correctamente!!')
