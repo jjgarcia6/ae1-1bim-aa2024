@@ -4,7 +4,7 @@
 * consta de una carpeta llamada sqlite
 * hay una base de datos de nombre baseDB.db
 * conexion crea la base y la conexion a la base
-* create crea las tablas en la base
+* create crea las tablas en la base(clinicas y parques)
 * insert agrega informacion a las tablas
 * select muestra datos dependiendo del query
 * update actualiza datos dependiendo del query
