@@ -6,22 +6,22 @@ from step01_conexion import conn
 # Definir la sentencia SQL para crear las tablas
 create_tables_sql = [
     '''
-    CREATE TABLE IF NOT EXISTS locales_de_comida (
+    CREATE TABLE IF NOT EXISTS clinicas (
         id INT PRIMARY KEY,
         nombre TEXT,
         direccion TEXT,
         telefono TEXT,
-        tipo_comida TEXT,
+        jornada TEXT,
         capacidad INTEGER        
     )
     ''',
     '''
-    CREATE TABLE IF NOT EXISTS centros_deportivos (
+    CREATE TABLE IF NOT EXISTS parques (
         id INT PRIMARY KEY,
         nombre TEXT,
         direccion TEXT,
         telefono TEXT,
-        tipo_deporte TEXT,
+        ubicacion TEXT,
         capacidad INTEGER
     )
     '''
