@@ -1,10 +1,10 @@
-'''Select data from tables locales_de_comida and centros_deportivos'''
+'''Select data from tablas clinicas y parques'''
 
 from step01_conexion import conn
 
 # Definir las sentencias SQL para seleccionar todos los registros de las tablas
-SELECT_LOCALES_DE_COMIDA = '''SELECT * FROM locales_de_comida'''
-SELECT_CENTROS_DEPORTIVOS = '''SELECT * FROM centros_deportivos'''
+SELECT_CLINICAS = '''SELECT * FROM clinicas'''
+SELECT_PARQUES = '''SELECT * FROM parques'''
 
 # Funcion para ejecutar una consulta y mostrar los resultados
 
@@ -27,5 +27,5 @@ def fetch_and_print(cur, query):
 # Seleccionar todos los registros de las tablas
 with conn:
     cursor = conn.cursor()
-    fetch_and_print(cursor, SELECT_LOCALES_DE_COMIDA)
-    fetch_and_print(cursor, SELECT_CENTROS_DEPORTIVOS)
+    fetch_and_print(cursor, SELECT_CLINICAS)
+    fetch_and_print(cursor, SELECT_PARQUES)
