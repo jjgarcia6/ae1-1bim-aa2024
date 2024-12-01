@@ -11,3 +11,5 @@
 * delete borra ciertos documentos en las colecciones bajo ciertas condiciones 
 
 * la version de Python que se usa es Python 3.12.7
+* PD: realice una actualizacion en base y colecciones debido a que equivoque los nombres a las clinicas particulares le puse locales comerciales y a parques recreativos les puse centros deportivos jajaja
+* PD2: Me sirvio para afianzar el stage, el commit y el push!!
