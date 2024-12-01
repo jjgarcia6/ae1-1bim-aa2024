@@ -1,39 +1,39 @@
-'''Actualizar datos de tablas locales_de_comida y centros_deportivos'''
+'''Actualizar datos de tablas clinicas y parques'''
 
 from step01_conexion import conn
 
 # Definir la sentencia SQL para actualizar registros en las tablas
-update_locales_de_comida = [
+update_clinicas = [
     '''
-    UPDATE locales_de_comida
-    SET nombre = 'Los Paisas Parceros'
+    UPDATE clinicas
+    SET nombre = 'Interhospital'
     WHERE id = 1
     ''',
     '''
-    UPDATE locales_de_comida
-    SET capacidad = 65
-    WHERE nombre = 'Roma'
+    UPDATE clinicas
+    SET capacidad = 80
+    WHERE nombre = 'IESS'
     '''
 ]
 
-update_centros_deportivos = [
+update_parques = [
     '''
-    UPDATE centros_deportivos
-    SET nombre = 'Taurus Fit Center'
+    UPDATE parques
+    SET nombre = 'Disneyland'
     WHERE id = 1
     ''',
     '''
-    UPDATE centros_deportivos
+    UPDATE parques
     SET capacidad = 60
-    WHERE nombre = 'Raza'
+    WHERE nombre = 'Asia'
     '''
 ]
 
 # Actualizar los registros en las tablas
 with conn:
     cursor = conn.cursor()
-    for sql in update_locales_de_comida:
+    for sql in update_clinicas:
         cursor.execute(sql)
-    for sql in update_centros_deportivos:
+    for sql in update_parques:
         cursor.execute(sql)
     print('Registros actualizados correctamente!!')
