@@ -11,3 +11,4 @@
 * delete borra datos depediendo del query
 
 * la version de Python en este branch es 3.12.7
+* PD: hubo una actualizacion de nombres de tablas, campos y variables en los archivos debido a que al ir a compartir el repositorio me di cuenta que estaban mal los nombres de las tablas y campos
