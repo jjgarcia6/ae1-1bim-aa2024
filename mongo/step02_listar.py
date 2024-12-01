@@ -1,7 +1,7 @@
 """Listar Colecciones"""
 
 # Importar el cliente de pymongo
-from step01_conexion import client
+from conexion import client
 
 # Seleccionar la base de datos
 db = client.documentos
